@@ -20,7 +20,7 @@ app.config(function($locationProvider, $stateProvider, $urlRouterProvider) {
 
     });
     */
-    
+
     if (window.history && window.history.pushState) {
         $locationProvider.html5Mode({
             enabled: true,
@@ -31,15 +31,15 @@ app.config(function($locationProvider, $stateProvider, $urlRouterProvider) {
     $stateProvider
         .state('main', {
             url: "/main",
-            templateUrl: "main.html"
+            templateUrl: "pages/main.html"
         })
         .state('about', {
             url: "/about",
-            templateUrl: "about.html"
+            templateUrl: "pages/about.html"
         })
         .state('experience', {
             url: "/experience",
-            templateUrl: "experience.html",
+            templateUrl: "pages/experience.html",
             controller: "DisplayCtrl"
         })
 
