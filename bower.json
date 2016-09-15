@@ -1,0 +1,22 @@
+{
+  "name": "portfolio",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Mika Iivonen <mikaemt@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "angular": "^1.5.8",
+    "angular-ui-router": "^0.3.1",
+  }
+}

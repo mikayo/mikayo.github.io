@@ -1,0 +1,36 @@
+<div class="row" ng-init="init()">
+  <div class="col-sm-6 textbox">
+    <h3>Work experience</h3>
+    <div class="job-box">
+      <h4 ng-click="toggleShow(0)">
+        <span class="glyphicon glyphicon-chevron-right" ng-hide="show[0]"></span>
+        <span class="glyphicon glyphicon-chevron-down" ng-show="show[0]"></span>
+        Job Title</h4>
+      <p class="job-text" ng-show="show[0]">Job description</p>
+    </div>
+    <div class="job-box">
+      <h4 ng-click="toggleShow(1)">
+        <span class="glyphicon glyphicon-chevron-right" ng-hide="show[1]"></span>
+        <span class="glyphicon glyphicon-chevron-down" ng-show="show[1]"></span>
+        Job Title</h4>
+      <p class="job-text" ng-show="show[1]">Job description</p>
+    </div>
+  </div>
+  <div class="col-sm-6 textbox">
+    <h3>IT skills</h3>
+    <div class="job-box">
+      <h4>Programming languages</h4>
+      <ul>
+        <li>C++</li>
+        <li>HTML, CSS</li>
+        <li>Javascript (Angular, Bootstrap, Node)</li>
+      </ul>
+    </div>
+    <div class="job-box">
+      <h4>Software</h4>
+    </div>
+    <div class="job-box">
+      <h4>Other</h4>
+    </div>
+  </div>
+</div>

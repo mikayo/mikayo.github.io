@@ -1,0 +1,62 @@
+/*.navbar .navbar-nav {
+  display: inline-block;
+  float: none;
+  vertical-align: top;
+}
+
+.navbar .navbar-collapse {
+  text-align: center;
+}
+*/
+.navbar-custom {
+  color: rgb(190,190,190);
+}
+
+.navbar-custom .navbar-nav > li > a {
+  color: rgb(190,190,190);
+}
+.navbar-custom .navbar-nav > .active > a, .navbar-nav > .active > a:hover, .navbar-nav > .active > a:focus {
+    color: #fff;
+    background-color:transparent;
+}
+.navbar-custom .navbar-brand {
+    color: #fff;
+}
+
+.bottom-row {
+  padding-top: 10px;
+  color: rgb(190,190,190);
+}
+
+.main {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.textbox {
+  min-height: 400px;
+}
+
+.job-box {
+  padding: 10px;
+}
+
+.job-text {
+  text-indent: 20px;
+}
+
+span.glyphicon-chevron-right {
+    font-size: 0.8em;
+}
+
+span.glyphicon-chevron-down {
+    font-size: 0.8em;
+}
+
+li:focus {
+    background-color: transparent;
+}
+
+a:focus {
+  background-color: transparent;
+}

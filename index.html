@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="en" ng-app="portfolio" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" ng-app="portfolio" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" ng-app="portfolio" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" ng-app="portfolio" class="no-js"> <!--<![endif]-->
+<head>
+    <base href="/"></base>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Portfolio Mika Iivonen </title>
+
+    <!-- product use -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular-ui-router.min.js"></script>
+
+    <!-- dev components -->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+
+    <link rel="stylesheet" href="css/custom.css">
+    <script src="js/app.js"></script>
+
+</head>
+  <body>
+    <!-- navigation -->
+    <nav class="navbar navbar-inverse navbar-static-top navbar-custom" ng-controller="NavCtrl">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#topnavbar" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/"> Portfolio </a>
+        </div>
+        <div class="collapse navbar-collapse" id="topnavbar">
+          <ul class="nav navbar-nav">
+            <li ng-class="{active: isActive('/about')}"><a href="/about">About Me</a></li>
+            <li ng-class="{active: isActive('/experience')}"><a href="/experience">Experience</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Projects <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="/">Project 1</a></li>
+                <li><a href="/">Project 2</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="/">Project 3</a></li>
+              </ul>
+            </li> <!-- /.dropdown -->
+          </ul> <!-- /.navbar-nav -->
+        </div> <!-- /.navbar-collapse -->
+      </div> <!-- /.container-fluid -->
+    </nav>
+
+    <!-- content -->
+    <div class="container main">
+      <div class="row">
+        <div class="col-xs-*">
+          <div ui-view></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="navbar-inverse">
+      <div class="container-fluid">
+        <div class="row bottom-row">
+          <div class="col-xs-* text-center"> Copyright Mika Iivonen 2016 </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
