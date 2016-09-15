@@ -6,6 +6,8 @@ app.config(function($locationProvider, $stateProvider, $urlRouterProvider) {
 
     $urlRouterProvider.otherwise("/main");
 
+    /*
+    // remove trailing slash
     $urlRouterProvider.rule(function($injector, $location) {
         var path = $location.path();
         var hasTrailingSlash = path[path.length-1] === '/';
@@ -17,7 +19,8 @@ app.config(function($locationProvider, $stateProvider, $urlRouterProvider) {
         }
 
     });
-
+    */
+    
     if (window.history && window.history.pushState) {
         $locationProvider.html5Mode({
             enabled: true,
